@@ -1,0 +1,155 @@
+body{
+    font-family: "Poppins", sans-serif;
+    max-width: 1500px;
+    margin: 0 auto;
+    color: #000000;
+    background-image: url("../imagens/eevee.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 77px;
+    background-size: 100% 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: black;
+}
+
+header a{
+    padding: 15px;
+}
+
+header img{
+    width: 40px;
+}
+
+header .logo, header #alterar-tema{
+    transition: .3s ease-in-out;
+}
+
+header .logo:hover, header #alterar-tema:hover{
+    transform: scale(1.2);
+}
+
+header #alterar-tema{
+    border: none;
+    cursor: pointer;
+}
+
+main{
+    padding: 20px;
+}
+
+.listagem-pokemon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cartao-pokemon{
+    background-color: rgba(197, 184, 184, 0.7);
+    width: 250px;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.cartao-pokemon:hover{
+    transform: scale(1.05);
+    background-color: #45759d;
+    color: white;
+}
+
+.cartao-pokemon .informacoes{
+    border: 1px solid #333333;
+    border-radius: 5px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.cartao-pokemon:hover .informacoes{
+    border: 1px solid white;
+}
+
+.cartao-pokemon .gif{
+    width: 80px;
+    height: 80px;
+}
+
+main .cartao-pokemon .tipos{
+    display: flex;
+    gap: 20px;
+}
+
+main .cartao-pokemon .tipo{
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.grama{
+    background-color: #7ac74c;
+}
+
+.veneno{
+    background-color: #df67ddfb;
+}
+
+.agua{
+    background-color: #6390f0;
+}
+
+.fogo{
+    background-color: #ee8130;
+}
+
+.voador{
+    background-color: #A890F0;
+}
+
+.inseto{
+    background-color: #a6b91a;
+}
+
+.descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.modo_escuro .cartao-pokemon{
+    background-color: #333333;
+    color: white;
+}
+
+.modo_escuro .cartao-pokemon:hover{
+    background-color: #48132e;
+}
+
+.modo_escuro .cartao-pokemon .informacoes{
+    border: 1px solid white;
+}
+
+.img{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    transition: opacity .7s;
+}
+
+.img.frente{
+    z-index: 1;
+}
+
+.img.tras{
+    opacity: 0;
+}
+
